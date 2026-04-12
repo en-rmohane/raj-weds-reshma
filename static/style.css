@@ -579,6 +579,14 @@ footer {
     text-align: center;
 }
 
+.warm-invitation {
+    font-size: 1.3rem;
+    color: var(--gold-light);
+    margin: 15px 0;
+    font-style: italic;
+    font-weight: 300;
+}
+
 .final-message {
     font-style: italic;
     opacity: 0.8;
