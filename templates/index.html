@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation | Raj & Reshma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <h1 class="loader-names">Raj <span class="heart">❤️</span> Reshma</h1>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <div id="music-container">
+        <button id="music-toggle" aria-label="Toggle Music">
+            <i class="fas fa-music"></i>
+        </button>
+        <audio id="bg-music" loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero" class="parallax" style="background-image: url('{{ url_for('static', filename='hero-bg.png') }}');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up">
+            <p class="tagline">Together with their families</p>
+            <h1 class="couple-names">Raj <span>&</span> Reshma</h1>
+            <p class="invitation-text">Cordially invite you to celebrate their wedding</p>
+            <div class="hero-date">
+                <span>05</span>
+                <span class="divider"></span>
+                <span>05</span>
+                <span class="divider"></span>
+                <span>2026</span>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="mouse"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Event Details -->
+        <section id="details" class="section">
+            <div class="container">
+                <h2 class="section-title">The Big Day</h2>
+                <div class="details-grid">
+                    <div class="detail-card" data-aos="zoom-in">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>When</h3>
+                        <p>Monday, May 5th, 2026</p>
+                        <p>6:45 PM onwards</p>
+                    </div>
+                    <div class="detail-card" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Where</h3>
+                        <p>Ayodhya Marriage Garden</p>
+                        <p>Athner Road, Betul</p>
+                        <a href="https://maps.google.com/?q=Ayodhya+Marriage+Garden+Athner+Road+Betul" target="_blank" class="btn-link">View on Maps</a>
+                    </div>
+                    <div class="detail-card" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fas fa-clock"></i>
+                        <h3>Auspicious Time</h3>
+                        <p>Godhuli Bela</p>
+                        <p>6:45 PM (Sunset)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section id="story" class="section bg-cream">
+            <div class="container">
+                <h2 class="section-title">Our Story</h2>
+                <div class="timeline">
+                    <div class="timeline-item left" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <h3>The Introduction</h3>
+                            <p>With the guidance and blessings of our families, our paths crossed, marking the start of a beautiful friendship.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right" data-aos="fade-left">
+                        <div class="timeline-content">
+                            <h3>Destiny's Choice</h3>
+                            <p>A few meaningful conversations revealed our shared values and life goals, turning a casual meeting into a heartfelt connection.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <h3>Family's Blessing</h3>
+                            <p>With the joy and approval of both families, we decided to unite our lives in this sacred bond of marriage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule -->
+        <section id="schedule" class="section">
+            <div class="container">
+                <h2 class="section-title">Program Details</h2>
+                <div class="schedule-grid">
+                    <div class="schedule-card" data-aos="fade-up">
+                        <div class="card-header">4th May - 11:00 AM</div>
+                        <div class="card-body">
+                            <h3>Ring Ceremony</h3>
+                            <p>The beginning of our official journey.</p>
+                        </div>
+                    </div>
+                    <div class="schedule-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-header">4th May - Evening</div>
+                        <div class="card-body">
+                            <h3>Haldi Ceremony</h3>
+                            <p>Blessings in shades of yellow.</p>
+                        </div>
+                    </div>
+                    <div class="schedule-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-header">4th May - Night</div>
+                        <div class="card-body">
+                            <h3>Sangeet Ceremony</h3>
+                            <p>A night filled with music and dance.</p>
+                        </div>
+                    </div>
+                    <div class="schedule-card highlight" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-header">5th May - 6:45 PM</div>
+                        <div class="card-body">
+                            <h3>Wedding Ceremony</h3>
+                            <p>The sacred union at Godhuli Bela.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section id="gallery" class="section bg-cream">
+            <div class="container">
+                <h2 class="section-title">Captured Moments</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Wedding Moment 1">
+                        <div class="overlay"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Wedding Moment 2">
+                        <div class="overlay"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=800&q=80" alt="Wedding Moment 3">
+                        <div class="overlay"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1519225495842-7b375442ddcb?auto=format&fit=crop&w=800&q=80" alt="Wedding Moment 4">
+                        <div class="overlay"><i class="fas fa-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact -->
+        <section id="contact" class="section bg-cream">
+            <div class="container text-center">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-links">
+                    <p><i class="fas fa-phone"></i> +91 98765 43210 (Raj)</p>
+                    <p><i class="fas fa-phone"></i> +91 91234 56789 (Reshma)</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="final-message">With the blessings of the Almighty</p>
+            <h2 class="mohane-family">Mohane Family</h2>
+            <p>cordially invites you to bless the couple.</p>
+            <div class="divider"></div>
+            <p class="signature">Raj ❤️ Reshma</p>
+            <p class="copyright">&copy; 2026 Crafted with love by Antigravity</p>
+        </div>
+    </footer>
+
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
